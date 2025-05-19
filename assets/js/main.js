@@ -325,8 +325,18 @@
             },
         };
 
-        var options = $.extend({}, sliderDefault, settings);
-        new Swiper(thSlider.get(0), options); // Initialize Swiper
+        // Initialize the slider
+        var swiper = new Swiper(thSlider[0], sliderDefault);
+
+        // Add form interaction handlers
+        var form = $('.appointment-form');
+        if (form.length) {
+            form.find('input, textarea, select').on('focus', function() {
+                swiper.autoplay.stop();
+            }).on('blur', function() {
+                swiper.autoplay.start();
+            });
+        }
     });
 
     // Function to add animation classes

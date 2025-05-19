@@ -9975,6 +9975,38 @@ ol.wp-block-rss {
   height: 56px;
 }
 
+
+@media (max-width: 767px) {
+  .form-group {
+    width: 100%;
+  }
+  .form-group .form-control {
+    width: 100%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.small-title {
+  font-size: 2.5rem; /* Adjust this value as needed */
+}
+
+@media (max-width: 767px) {
+  .slider-pagination {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* ... existing styles within this media query ... */
+
+  .appointment-form textarea.form-control {
+    min-height: 100px; /* You can adjust this value as needed */
+  }}
+
+
 .newsletter-wrap .newsletter-form .th-btn img {
   width: 16px;
 }
