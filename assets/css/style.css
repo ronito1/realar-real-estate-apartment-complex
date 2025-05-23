@@ -20421,7 +20421,8 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .service-card.style4 .service-img img {
-  width: 100%;
+  width: 1500px;
+  height: auto;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
