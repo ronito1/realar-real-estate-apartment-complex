@@ -8747,33 +8747,26 @@ ol.wp-block-rss {
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-  width: 40px;
-  height: 40px;
-  line-height: 37px;
-  border: 1px solid var(--body-color);
-  border-radius: 50%;
   text-align: center;
 }
 
 .th-widget-contact .info-box_text .icon img {
-  -webkit-filter: contrast(0) brightness(2) opacity(0.7);
-          filter: contrast(0) brightness(2) opacity(0.7);
+  -webkit-filter: contrast(0) brightness(20) opacity(0.7);
+          filter: contrast(0) brightness(20) opacity(0.7);
 }
 
 .th-widget-contact .info-box_text .details {
-  margin-top: -0.3em;
 }
 
 .th-widget-contact .info-box_text .details p {
-  margin-bottom: 0;
 }
 
 .th-widget-contact .info-box_text a {
-  color: inherit;
+  color: inherit !important;
 }
 
 .th-widget-contact .info-box_text a:hover {
-  color: var(--theme-color2);
+  color: var(--theme-color2)!important;;
 }
 
 .th-widget-contact .info-box_text:not(:last-child) {
