@@ -1831,6 +1831,30 @@ Blog Area
             </div>
         </div>
     </div>
+
+    <!-- Cursor Follower Control Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cursorFollower = document.querySelector('.cursor-follower');
+            let mouseTimeout;
+
+            // Hide cursor follower initially
+            cursorFollower.style.opacity = '0';
+
+            // Show cursor follower on mouse move
+            document.addEventListener('mousemove', function() {
+                cursorFollower.style.opacity = '1';
+                
+                // Clear any existing timeout
+                clearTimeout(mouseTimeout);
+                
+                // Set new timeout to hide cursor after 1 second of no movement
+                mouseTimeout = setTimeout(function() {
+                    cursorFollower.style.opacity = '0';
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>
