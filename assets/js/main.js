@@ -1118,24 +1118,32 @@
             mouseY = 0;
     
         TweenMax.to({}, 0.016, {
-        repeat: -1,
-        onRepeat: function() {
-            posX += (mouseX - posX) / 9;
-            posY += (mouseY - posY) / 9;
+            repeat: -1,
+            onRepeat: function() {
+                // Smoother easing by reducing the divisor from 9 to 6
+                posX += (mouseX - posX) / 6;
+                posY += (mouseY - posY) / 6;
     
-            TweenMax.set(follower, {
-                css: {
-                left: posX - 12,
-                top: posY - 12
-                }
-            });
-        }
+                TweenMax.set(follower, {
+                    css: {
+                        left: posX - 12,
+                        top: posY - 12
+                    }
+                });
+            }
         });
     
         $(document).on("mousemove", function(e) {
             mouseX = e.clientX;
             mouseY = e.clientY;
         });
+
+        // Add smooth transition for cursor follower
+        follower.css({
+            'transition': 'transform 0.1s ease-out',
+            'will-change': 'transform'
+        });
+
         //circle
         $(".slider-area").on("mouseenter", function() {
             follower.addClass("d-none");

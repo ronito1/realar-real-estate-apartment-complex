@@ -57,6 +57,34 @@
 
     <link rel="stylesheet" href="assets/css/sticky-footer.css">
 
+    <style>
+        .widget-banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .widget-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .link {
+            font-size: 1rem; /* Adjust font size for better readability on mobile */
+            margin: 5px 0; /* Add some spacing between links */
+        }
+
+        @media (max-width: 600px) {
+            .title {
+                font-size: 1.5rem; /* Adjust title size for smaller screens */
+            }
+            .subtitle {
+                font-size: 1rem; /* Adjust subtitle size for smaller screens */
+            }
+        }
+    </style>
+
 </head>
 
 <body class="bg-light">
@@ -730,16 +758,18 @@ Blog Area
                         <div class="widget widget_banner">
                             <div class="widget-banner text-center">
                                 <h3 class="title">Contact A&A Now !</h3>
-                                <div> <a href="contact.html"><img src="assets/img/logo.jpg" alt="img" width="200px" height="200px"></div>
+                                <div>
+                                    <a href="contact.html"><img src="assets/img/logo.jpg" alt="img" width="200px" height="200px"></a>
+                                </div>
                                 <br>
-                                <h4 class="subtitle"><i class="fas fa-phone-alt"></i> </h4>
+                                <h4 class="subtitle"><i class="fas fa-phone-alt"></i></h4>
                                 <h5 class="link"><a href="tel:+91 8097298575">+91 8097298575</a></h5>
                                 <h5 class="link"><a href="tel:+91 8108551085">+91 8108551085</a></h5>
                                 <h5 class="link"><a href="tel:+91 8879500505">+91 8879500505</a></h5>
                                 <h4 class="subtitle"><i class="fas fa-envelope"></i></h4>
                                 <h5 class="link"><a href="mailto:a.a.realty.propertysolutions@gmail.com">a.a.realty.propertysolutions@gmail.com</a></h5>
-                                <h5 class="link"><a href="mailto: think.sandeep@outlook.com"> think.sandeep@outlook.com</a></h5>
-                         </div>
+                                <h5 class="link"><a href="mailto:think.sandeep@outlook.com">think.sandeep@outlook.com</a></h5>
+                            </div>
                         </div>
                     
                     </aside>

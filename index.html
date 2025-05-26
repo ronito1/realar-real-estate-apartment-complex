@@ -56,6 +56,37 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Sticky Footer CSS -->
     <link rel="stylesheet" href="assets/css/sticky-footer.css">
+
+
+<style>
+    /* Add this CSS to your stylesheet */
+
+/* General styles for the testimonial cards */
+.testi-card {
+    margin: 10px; /* Add some margin for spacing */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .testi-grid-wrap {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .testi-card_profile {
+        flex-direction: column; /* Stack profile image and details vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .testi-card_profile-img {
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .testi-card_text {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+}
+</style>
 </head>
 
 <body class="bg-smoke">
@@ -272,19 +303,10 @@
                     <li><a href="about.html">
                             About Us
                         </a></li>
-                    <li class="menu-item-has-children">
-                        <a href="property.html">
-                            Our Project
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a href="property.html">
-                                    Projects
-                                </a></li>
-                            <li><a href="property-details.html">
-                                    Project Details
-                                </a></li>
-                        </ul>
-                    </li>
+                        <li><a href="property.html">
+                            Property
+                        </a></li>
+                        <li>
                     <li><a href="whyus.html">
                         Why Us
                     </a></li>
@@ -985,7 +1007,7 @@ Property Area
                         <h4 class="property-card-title"><a href="property-details7.html">Plutonium Business Park</a></h4>
                         <p class="property-card-text">Experience premium commercial & retail spaces ranging from 1428–3968 sq.ft. with vastu-compliant layouts, private restrooms, cross-ventilation & luxury amenities like spa, gym, dining zones, sleeping pods & more. Located near Turbhe Station & Sion-Panvel Highway with proximity to Navi Mumbai Airport, it's the ideal future-ready workspace</p>
                         <div class="property-card-price-meta">
-                            <h5 class="property-card-price">₹1.2 Cr onwards (Office Units)</h5>
+                            <h5 class="property-card-price">₹1.2 Cr onwards</h5>
                             <div class="property-ratting-wrap">
                                 <div class="star-ratting">
                                     <i class="fas fa-star"></i>
@@ -1041,7 +1063,7 @@ Property Area
                         <p class="property-card-text">Strategically located near IKEA in Turbhe, Navi Mumbai, Goodwill BizHub offers premium industrial units, office spaces, and retail showrooms designed for growing MSMEs. With top-tier amenities and excellent connectivity, it's the perfect launchpad for business success and long-term growth.
                         </p>
                         <div class="property-card-price-meta">
-                            <h5 class="property-card-price">₹1.05 Cr onwards(Industrial/Office/Retail)</h5>
+                            <h5 class="property-card-price">₹1.05 Cr onwards</h5>
                             <div class="property-ratting-wrap">
                                 <div class="star-ratting">
                                     <i class="fas fa-star"></i>
@@ -1068,7 +1090,7 @@ Property Area
                         <h4 class="property-card-title"><a href="property-details10.html">Emaar Casa Venero</a></h4>
                         <p class="property-card-text">Premium 4 & 5 BHK villas in a gated community by the makers of Burj Khalifa. Enjoy spacious layouts, high-end finishes, 70% open space, and lifestyle amenities like pool, spa, gym, and clubhouse. Close to beaches, cafes, schools, and hospitals with great connectivity via Thal Road, Mandwa Ferry & upcoming Navi Mumbai Airport.</p>
                         <div class="property-card-price-meta">
-                            <h5 class="property-card-price">₹9 Cr onwards (4 & 5 BHK Villas)</h5>
+                            <h5 class="property-card-price">₹9 Cr onwards</h5>
                             <div class="property-ratting-wrap">
                                 <div class="star-ratting">
                                     <i class="fas fa-star"></i>
@@ -1452,11 +1474,7 @@ Property Area
                         <div class="col-lg-6">
                             <div class="contact-thumb5-1">
                                 <img src="assets/img/normal/contact_thumb_5_1.png" alt="img">
-                                <div class="contact-cta-wrap" style="text-align: left;"> <!-- Added inline style for left alignment -->
-                                    <h5><i class="fas fa-phone"></i> Phone: +91 8097298575, +91 8108551085, +91 8879500505</h5> <!-- Added contact number with icon -->
-                                    <h5><i class="fas fa-envelope"></i> Email: a.a.realty.propertysolutions@gmail.com, think.sandeep@outlook.com</h5> <!-- Added sample email with icon -->
-                                    <h5><i class="fas fa-map-marker-alt"></i> Address: Mumbai, India</h5> <!-- Added sample address with icon -->
-                            </div>
+                               
                         </div>
                     </div>
                 </div>
